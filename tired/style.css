@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+body {
+    font-family: "Kosugi Maru", sans-serif;
+    font-style: normal;
+}
+
+h1 {
+    letter-spacing: 0.5rem;
+    color: #666;
+}
+
+.select {
+    display: flex;
+
+}
+
+div {
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    font-size: 18px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    background-color: #4169e1;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#tea {
+    /* 初期設定で画像を非表示にしておく */
+    display: none;
+    width: 300px;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+}
