@@ -1,29 +1,32 @@
 
-const btnTwo = document.getElementById("btn-two");
-const btnThree = document.getElementById("btn-three");
 
 
-const Btn = document.getElementsByClassName("btn");
-
-// // btnOneがクリックされたら　のイベント
-// Btn.addEventListener('click', () =>{
-// // もしbtnOneが選ばれたら画像を表示する
-//     if(btnOne.checked) {
-//         Tea.style.display = 'block';
-//     }else {
-//         alert('何も選ばれてません');
-//     }
-// });
 
 function displayImage() {
     const Tea = document.getElementById("tea");
+    const music = document.getElementById("cat");
+    const doll = document.getElementById('bear');
+
     const btnOne = document.getElementById('btn-one');
+    const btnTwo = document.getElementById("btn-two");
+    const btnThree = document.getElementById("btn-three");
+    
+    const btns = document.getElementsByClassName("btn");
 
     if(btnOne.checked) {
         Tea.style.display = 'block';
-    }else {
+    }else if(btnTwo.checked){
+        music.style.display = 'block';
+    }else if(btnThree.checked){
+        doll.style.display = 'block';
+    }
+    else {
         alert('どれか選んでください')
     }
 }
 
-Btn.addEventListener('click', displayImage);
+const btns = document.getElementsByClassName("btn");
+for (let i = 0; i < btns.length; i++){
+
+btns[i].addEventListener('click', displayImage);
+}
